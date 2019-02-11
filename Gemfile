@@ -17,6 +17,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 source 'https://rubygems.org'
 gem 'unicorn'
 
+gem 'graphql'
+gem "graphiql-rails"
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -40,3 +43,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'graphiql-rails', group: :development
